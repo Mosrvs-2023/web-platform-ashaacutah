@@ -1,72 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <style>
-    body {
-      background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-    
-    .parallax {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    
-    .button-container {
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
 
-<script>
-!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};
-d=s.createElement(q);d.src='//d1l6p2sc9645hc.cloudfront.net/gosquared.js';q=
-s.getElementsByTagName(q)[0];q.parentNode.insertBefore(d,q)}(window,document
-,'script','_gs');
+      .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-_gs('GSN-055021-L');
-_gs('set', 'anonymizeIP', true);
-</script>
+      .button-container {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
 
-</head>
-<body>
-  <div class="parallax">
-    <div class="button-container">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
-        No Payments, No Interest for a FULL YEAR!
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
-         Buying or Selling a Home? Click Here!
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
-        I want to remodel my h ome or part of my hom e
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
-        I want to replace my roof
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
-        Looking for Financing? Get approved in the next few minuutes! No interest 
-        No payments for a FULL year!
-      </button>
+    <script>
+      !(function (g, s, q, r, d) {
+        r = g[r] =
+          g[r] ||
+          function () {
+            (r.q = r.q || []).push(arguments);
+          };
+        d = s.createElement(q);
+        d.src = '//d1l6p2sc9645hc.cloudfront.net/gosquared.js';
+        q = s.getElementsByTagName(q)[0];
+        q.parentNode.insertBefore(d, q);
+      })(window, document, 'script', '_gs');
+
+      _gs('GSN-055021-L');
+      _gs('set', 'anonymizeIP', true);
+    </script>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="button-container">
+        <button
+          class="
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            m-2
+            rounded
+          "
+        >
+          No Payments, No Interest for a FULL YEAR!
+        </button>
+        <button
+          class="
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            m-2
+            rounded
+          "
+        >
+          Buying or Selling a Home? Click Here!
+        </button>
+        <button
+          class="
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            m-2
+            rounded
+          "
+        >
+          I want to remodel my h ome or part of my hom e
+        </button>
+        <button
+          class="
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            m-2
+            rounded
+          "
+        >
+          I want to replace my roof
+        </button>
+        <button
+          class="
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            m-2
+            rounded
+          "
+        >
+          Looking for Financing? Get approved in the next few minuutes! No
+          interest No payments for a FULL year!
+        </button>
+      </div>
     </div>
-  </div>
 
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        let scrollTop = $(window).scrollTop();
-        let imgPos = scrollTop / 2 + 'px';
-        $('body').css('background-position', 'center ' + imgPos);
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          let scrollTop = $(window).scrollTop();
+          let imgPos = scrollTop / 2 + 'px';
+          $('body').css('background-position', 'center ' + imgPos);
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
